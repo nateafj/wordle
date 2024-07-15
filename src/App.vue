@@ -33,7 +33,7 @@ const handleInput = (key) =>{
   if (key == "{enter}") {
     if (currentGuess.length == 5) {
       state.currentGuessIndex++;
-      for (var i = 0 ; i < currentGuess.length; i++){
+      for (var i = 0 ; i < currentGuess.length; i++){ 
         let c = currentGuess.charAt(i);
         if(c == state.solution.charAt(i)){
           state.guessedLetters.found.push(c);
